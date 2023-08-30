@@ -6,7 +6,7 @@
       "job_title": "Software Developer",
       "job_start_date": "2023-12-14",
       "job_close_date": "2023-12-14",
-      "experience_required": false,
+      "experience_required": true,
       "number_of_openings": 1,
       "job_notes": "Frontend Developer(Angular)"
     },
@@ -19,6 +19,16 @@
       "experience_required": false,
       "number_of_openings": 0,
       "job_notes": ""
+    },
+    {
+      "id": 3,
+      "job_number": "123-555",
+      "job_title": "1235",
+      "job_start_date": "2023-08-30",
+      "job_close_date": "2023-08-30",
+      "experience_required": true,
+      "number_of_openings": "1",
+      "job_notes": "Test"
     }
   ]
 }
