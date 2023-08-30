@@ -19,13 +19,13 @@ export class NewJobComponent implements OnInit {
   ) {
     this.createJobForm = new FormGroup({
       job_id: new FormControl('0', Validators.required),
-      job_number: new FormControl('123', Validators.required),
-      job_title: new FormControl('123', Validators.required),
+      job_number: new FormControl('', Validators.required),
+      job_title: new FormControl('', Validators.required),
       job_start_date: new FormControl('', Validators.required),
       job_close_date: new FormControl('', Validators.required),
       experience_required: new FormControl(false),
-      number_of_openings: new FormControl('1', Validators.required),
-      job_notes: new FormControl('Test', Validators.required),
+      number_of_openings: new FormControl('', Validators.required),
+      job_notes: new FormControl('', Validators.required),
     });
   }
 

@@ -27,7 +27,7 @@
       "job_start_date": "2023-08-30",
       "job_close_date": "2023-08-30",
       "experience_required": true,
-      "number_of_openings": "1",
+      "number_of_openings": 1,
       "job_notes": "Test"
     }
   ]
