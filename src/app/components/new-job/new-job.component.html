@@ -1,12 +1,8 @@
 <form [formGroup]="createJobForm" (ngSubmit)="createJob()">
     <table>
         <tr>
-            <td>
-                <label>ID:</label>
-            </td>
-            <td>
-                <input type="number" formControlName="job_id" name="job_id" required>
-            </td>
+            <td>Internal ID: </td>
+            <td><input type="text" formControlName="job_id" readonly></td>
         </tr>
         <tr>
             <td>
@@ -65,5 +61,5 @@
             </td>
         </tr>
     </table>
-  <button type="submit">Create Job</button>
+  <button type="submit" class="btn btn-sm btn-primary">Create Job</button>
 </form>
