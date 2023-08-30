@@ -1,0 +1,69 @@
+<form [formGroup]="createJobForm" (ngSubmit)="createJob()">
+    <table>
+        <tr>
+            <td>
+                <label>ID:</label>
+            </td>
+            <td>
+                <input type="number" formControlName="job_id" name="job_id" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Title:</label>
+            </td>
+            <td>
+                <input type="text" formControlName="job_title" name="job_title" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Number:</label>
+            </td>
+            <td>
+                <input type="text" formControlName="job_number" name="job_number" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Start Date:</label>
+            </td>
+            <td>
+                <input type="date" formControlName="job_start_date" name="job_start_date" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Close Date:</label>
+            </td>
+            <td>
+                <input type="date" formControlName="job_close_date" name="job_close_date" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Experience Required:</label>
+            </td>
+            <td>
+                <input type="checkbox" checked="checked" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Number of Openings:</label>
+            </td>
+            <td>
+                <input type="number" formControlName="number_of_openings" name="number_of_openings" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Notes:</label>
+            </td>
+            <td>
+                <textarea formControlName="job_notes" name="job_notes" cols="80" rows="6" required></textarea>
+            </td>
+        </tr>
+    </table>
+  <button type="submit">Create Job</button>
+</form>

@@ -1,0 +1,131 @@
+<h2>Job Details</h2>
+<!--
+<form (ngSubmit)="updateJob()">
+        <table>
+            <tr>
+                <td>
+                    <label>Job Title:</label>
+                </td>
+                <td>
+                    <input type="text" formControlName=job.job_title" name="job_title" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Job Number:</label>
+                </td>
+                <td>
+                    <input type="text" formControlName=job.job_number" name="job_number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Job Start Date:</label>
+                </td>
+                <td>
+                    <input type="date" formControlName=job.job_start_date" name="job_start_date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Job Close Date:</label>
+                </td>
+                <td>
+                    <input type="date" formControlName=job.job_close_date" name="job_close_date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Experience Required:</label>
+                </td>
+                <td>
+                    <input type="checkbox" formControlName=job.experience_required" name="experience_required" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number of Openings:</label>
+                </td>
+                <td>
+                    <input type="number" formControlName=job.number_of_openings" name="number_of_openings" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Job Notes:</label>
+                </td>
+                <td>
+                    <textarea formControlName=job.job_notes" name="job_notes" cols="80" rows="6" required></textarea>
+                </td>
+            </tr>
+        </table>
+
+  <button type="submit" class="btn btn-primary">Update Job</button>
+</form>
+-->
+<form [formGroup]="jobForm" (ngSubmit)="updateJob()">
+    <table>
+        <tr>
+            <td>Internal ID: </td>
+            <td><input type="text" formControlName="job_id" readonly></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Title:</label>
+            </td>
+            <td>
+                <input type="text" formControlName="job_title" name="job_title" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Number:</label>
+            </td>
+            <td>
+                <input type="text" formControlName="job_number" name="job_number" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Start Date:</label>
+            </td>
+            <td>
+                <input type="date" formControlName="job_start_date" name="job_start_date" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Close Date:</label>
+            </td>
+            <td>
+                <input type="date" formControlName="job_close_date" name="job_close_date" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Experience Required:</label>
+            </td>
+            <td>
+                <!--<input type="boolean" formControlName="experience_required" name="experience_required" required>-->
+                <input type="checkbox" formControlName="experience_required">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Number of Openings:</label>
+            </td>
+            <td>
+                <input type="number" formControlName="number_of_openings" name="number_of_openings" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Job Notes:</label>
+            </td>
+            <td>
+                <textarea formControlName="job_notes" name="job_notes" cols="80" rows="6" required></textarea>
+            </td>
+        </tr>
+    </table>
+  <button type="submit" [disabled]="!jobForm.valid">Update Job</button>
+</form>

@@ -1,0 +1,8 @@
+<h2>Job Listings</h2>
+<table>
+  <tr *ngFor="let job of jobs" (click)="navigateToJobDetails(job.id)" style="cursor: pointer;">
+    <td>{{ job.job_title }}</td>
+    <td>{{ job.job_number }}</td>
+    <td>{{ job.job_notes }}</td>
+  </tr>
+</table>
