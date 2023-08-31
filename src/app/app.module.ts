@@ -14,7 +14,6 @@ import { JobDetailsComponent } from './components/job-details/job-details.compon
 @NgModule({
   declarations: [
     AppComponent,
-    JobListComponent,
     NewJobComponent,
     JobDetailsComponent
   ],
