@@ -48,7 +48,6 @@ export class JobDetailsComponent implements OnInit {
 	updateJob(): void {
 		const jobId = Number(this.route.snapshot.paramMap.get('id'));
 		if (this.jobForm.valid) {
-			console.log(this.jobForm);
 			const updatedJob: Job = {
 				id: jobId,
 				job_number: this.jobForm.value.job_number,
