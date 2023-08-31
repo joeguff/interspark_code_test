@@ -6,8 +6,7 @@ import { JobDetailsComponent } from './components/job-details/job-details.compon
 
 const routes: Routes = [
   { path: '', redirectTo: '/jobs', pathMatch: 'full' },
-  //{ path: 'jobs', component: JobListComponent},
-  { path: 'jobs', loadChildren: () => import('./jobs.module').then(m => m.JobsModule) },
+  { path: 'jobs', component: JobListComponent},
   { path: 'jobs/new', component: NewJobComponent, pathMatch: 'full' },
   { path: 'jobs/:id', component: JobDetailsComponent }
 ];
