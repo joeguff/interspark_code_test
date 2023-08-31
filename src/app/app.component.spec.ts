@@ -1,31 +1,27 @@
-/*
-import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
+	let fixture: ComponentFixture<AppComponent>;
+	let component: AppComponent;
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+	beforeEach(() => {
+		TestBed.configureTestingModule({
+			declarations: [AppComponent],
+			imports: [RouterTestingModule],
+		});
 
-  it(`should have as title 'interspark'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('interspark');
-  });
+		fixture = TestBed.createComponent(AppComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('interspark app is running!');
-  });
+	it('should create the app', () => {
+		expect(component).toBeTruthy();
+	});
+
+	it(`should have as title 'Interspark Code Test'`, () => {
+		expect(component.title).toEqual('Interspark Code Test');
+	});
 });
-*/
