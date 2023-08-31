@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { JobListComponent } from './components/job-list/job-list.component';
 
 @NgModule({
-  declarations: [JobListComponent],
-  imports: [CommonModule, RouterModule.forChild([{ path: '', component: JobListComponent }])]
+  imports: [CommonModule, RouterModule.forChild([{ path: '', component: JobListComponent }])],
+  declarations: [JobListComponent]
 })
 export class JobsModule { }
